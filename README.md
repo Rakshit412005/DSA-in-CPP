@@ -10,7 +10,6 @@ Welcome to the **DSA in C++** repository! This collection is designed to help yo
 - [Algorithms Implemented](#algorithms-implemented)
 - [How to Contribute](#how-to-contribute)
 - [Resources](#resources)
-- [License](#license)
 
 ## Getting Started
 
