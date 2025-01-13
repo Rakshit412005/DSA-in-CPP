@@ -97,6 +97,6 @@ Please ensure your code adheres to clean coding standards and includes comments 
 - [Codeforces](https://codeforces.com/)
 - [CP Algorithms](https://cp-algorithms.com/)
 
-Happy Coding! :rocket:
+
 
 If you find this repository helpful, please give it a star! :star:
