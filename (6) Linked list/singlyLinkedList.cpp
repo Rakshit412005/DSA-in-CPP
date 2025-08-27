@@ -11,6 +11,14 @@ public:
         this->data = data;
         this->next = NULL;
     };
+    ~Node(){
+        int value = this->data;
+        if(this->next == NULL){
+            delete next; 
+            this->next = NULL;
+        }
+        cout<<"memory is freed from node with data "<<value<<endl;
+    }
 };
 
 void instertAtHead(Node* &Head, int d)
