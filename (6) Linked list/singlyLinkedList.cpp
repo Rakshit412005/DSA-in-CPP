@@ -49,6 +49,7 @@ void insertAtPosition(Node* &Head,Node* &Tail,int position, int d){
     }
     if(temp->next == NULL){
         insertAtTail(Tail,d);
+        return;
     }
     Node* nodeToInsert = new Node(d);
     nodeToInsert->next = temp->next;
