@@ -46,12 +46,20 @@ void deleteNode(Node* &Tail, int element){
      else{
          Node* prev = Tail;
          Node* curr = Tail->next;
+
          while(curr->data != element){
             prev= curr;
             curr=curr->next;
-         }
+         } 
+
          prev->next = curr->next;
-         if(Tail == curr){
+
+         if(curr == prev){
+            Tail = NULL;
+         }
+
+         
+         else if(Tail == curr){
             Tail=prev;
          }
          curr->next = NULL;
@@ -61,10 +69,14 @@ void deleteNode(Node* &Tail, int element){
 
 void print(Node *&Tail)
 {
+    if(Tail == NULL){
+        cout<<"LL is empty"<<endl;
+    }
+
     Node *temp = Tail;
     do{
-        cout<<Tail->data<<"\t";
-        Tail = Tail->next;
+        cout<<temp->data<<"\t";
+        temp = temp->next;
     }
     while (Tail!=temp);
     
@@ -75,12 +87,12 @@ int main(){
     Node* Tail = NULL;
     insertNode(Tail,2,3);
     print(Tail);
-    insertNode(Tail,3,5);
-    print(Tail);
-    insertNode(Tail,5,7);
-    print(Tail);
-    insertNode(Tail,5,6);
-    print(Tail);
+    // insertNode(Tail,3,5);
+    // print(Tail);
+    // insertNode(Tail,5,7);
+    // print(Tail);
+    // insertNode(Tail,5,6);
+    // print(Tail);
      deleteNode(Tail,3);
     print(Tail);
     return 0;
