@@ -38,6 +38,12 @@ void insertNode(Node* &Tail, int element, int data){
     }
 };
 
+void deleteNode(Node* &Tail, int element){
+     if(Tail == NULL){
+        
+     }
+}
+
 void print(Node *&Tail)
 {
     Node *temp = Tail;
