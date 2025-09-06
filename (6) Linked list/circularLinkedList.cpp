@@ -72,7 +72,7 @@ void print(Node *&Tail)
     if(Tail == NULL){
         cout<<"LL is empty"<<endl;
     }
-
+    
     Node *temp = Tail;
     do{
         cout<<temp->data<<"\t";
@@ -87,12 +87,12 @@ int main(){
     Node* Tail = NULL;
     insertNode(Tail,2,3);
     print(Tail);
-    // insertNode(Tail,3,5);
-    // print(Tail);
-    // insertNode(Tail,5,7);
-    // print(Tail);
-    // insertNode(Tail,5,6);
-    // print(Tail);
+    insertNode(Tail,3,5);
+    print(Tail);
+    insertNode(Tail,5,7);
+    print(Tail);
+    insertNode(Tail,5,6);
+    print(Tail);
      deleteNode(Tail,3);
     print(Tail);
     return 0;
