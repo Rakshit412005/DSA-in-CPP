@@ -40,7 +40,22 @@ void insertNode(Node* &Tail, int element, int data){
 
 void deleteNode(Node* &Tail, int element){
      if(Tail == NULL){
-        
+        cout<<"LL is empty"<<endl;
+        return;
+     }
+     else{
+         Node* prev = Tail;
+         Node* curr = Tail->next;
+         while(curr->data != element){
+            prev= curr;
+            curr=curr->next;
+         }
+         prev->next = curr->next;
+         if(Tail == curr){
+            Tail=prev;
+         }
+         curr->next = NULL;
+         delete curr;
      }
 }
 
@@ -65,6 +80,8 @@ int main(){
     insertNode(Tail,5,7);
     print(Tail);
     insertNode(Tail,5,6);
+    print(Tail);
+     deleteNode(Tail,3);
     print(Tail);
     return 0;
 }
