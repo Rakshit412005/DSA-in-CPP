@@ -56,6 +56,16 @@ void insertAtPosition(Node* &Head,Node* &Tail,int position,int d){
 
 }
 
+void deleteAtPosition(Node* &Head, Node* &Tail, int position){
+    if(position==1){
+        Node* nodeToDelete = Head;
+        Head->next->prev = NULL;
+        Head->next = NULL;
+        Head = nodeToDelete->next;
+        delete nodeToDelete;
+    }
+}
+
 void print(Node* &Head)
 {
     Node *temp = Head;
