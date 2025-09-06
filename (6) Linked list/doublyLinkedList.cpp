@@ -13,6 +13,7 @@ public:
         this->data = data;
         this->next = NULL;
     }
+  
 };
 
 void insertAtHead(Node* &Head, int d){
@@ -57,13 +58,40 @@ void insertAtPosition(Node* &Head,Node* &Tail,int position,int d){
 }
 
 void deleteAtPosition(Node* &Head, Node* &Tail, int position){
+    Node* temp = Head;
+    int count = 1;
+
+    while(count<position-1){
+        temp=temp->next;
+        count++;
+    }
+
     if(position==1){
         Node* nodeToDelete = Head;
         Head->next->prev = NULL;
-        Head->next = NULL;
         Head = nodeToDelete->next;
+        nodeToDelete->next = NULL;
         delete nodeToDelete;
+        return;
     }
+
+    Node* nodeToDelete = temp->next;
+    temp->next->prev = NULL;
+    temp->next->next = NULL;
+    temp->next = nodeToDelete->next;
+    nodeToDelete->next->prev = temp;
+    delete nodeToDelete;
+
+
+    if(temp->next->next == NULL){
+        Node* nodeToDelete = Tail;
+        Tail->prev = NULL;
+        temp->next= NULL;
+        Tail= temp;
+        delete nodeToDelete;
+        return;
+    }
+
 }
 
 void print(Node* &Head)
