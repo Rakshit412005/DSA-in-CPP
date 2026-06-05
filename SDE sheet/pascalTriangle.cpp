@@ -2,7 +2,8 @@
 #include <vector>
 using namespace std;   
 
-class Solution {
+// leetcode solution for pascal triangle problem
+class Solution { // copy from here
 public:
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>> res;
@@ -17,3 +18,5 @@ public:
         
     }
 };
+
+ 
