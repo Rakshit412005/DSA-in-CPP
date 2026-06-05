@@ -16,10 +16,10 @@ public:
         solve(index+1,nums,output,ans); //excluded
         
         int element = nums[index];
-        output.push_back(element);
+        output.push_back(element); // included
         solve(index+1,nums,output,ans);
         
-        output.pop_back();
+        
     }
 
     vector<vector<int>> subsets(vector<int>& nums) {
