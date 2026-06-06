@@ -78,17 +78,6 @@ To get started with this repository:
 - Backtracking (N-Queens, Sudoku Solver)
 - Divide and Conquer (Maximum Subarray Problem)
 
-## How to Contribute
-
-Contributions are always welcome! Follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes with clear and concise commit messages.
-4. Submit a pull request.
-
-Please ensure your code adheres to clean coding standards and includes comments for better readability.
-
 ## Resources
 
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
