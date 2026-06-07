@@ -3,7 +3,8 @@
 #include <climits>
 using namespace std;
 
-class Solution {
+// leetcode solution for best time to buy and sell a stock problem
+class Solution { // copy from here
 public:
 
 
