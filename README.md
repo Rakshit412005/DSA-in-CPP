@@ -82,9 +82,6 @@ To get started with this repository:
 
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 - [LeetCode](https://leetcode.com/)
-- [HackerRank](https://www.hackerrank.com/)
-- [Codeforces](https://codeforces.com/)
-- [CP Algorithms](https://cp-algorithms.com/)
 
 
 
