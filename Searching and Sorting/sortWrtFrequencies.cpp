@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <queue>
 using namespace std;
 
@@ -8,7 +8,7 @@ void sortWrtFrequencies(vector<int> &arr)
 {
     int n = arr.size();
     vector<int> ans;
-    map<int, int> freq;
+    unordered_map<int, int> freq;
     priority_queue<pair<int, int>, vector<pair<int, int>>, less<pair<int, int>>> pq;
 
     for (int i = 0; i < n; i++)
