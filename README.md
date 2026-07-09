@@ -86,19 +86,3 @@ To get started with this repository:
 
 
 If you find this repository helpful, please give it a star! :star:
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-|  |
-| ------- |
-| [0013-roman-to-integer](https://github.com/Rakshit412005/DSA-in-CPP/tree/master/0013-roman-to-integer) |
-## Math
-|  |
-| ------- |
-| [0013-roman-to-integer](https://github.com/Rakshit412005/DSA-in-CPP/tree/master/0013-roman-to-integer) |
-## String
-|  |
-| ------- |
-| [0013-roman-to-integer](https://github.com/Rakshit412005/DSA-in-CPP/tree/master/0013-roman-to-integer) |
-<!---LeetCode Topics End-->
