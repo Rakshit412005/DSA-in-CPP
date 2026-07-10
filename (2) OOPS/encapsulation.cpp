@@ -56,6 +56,14 @@ class Student{
       cout<<"Studying Hours - " << this->studyHrs << endl;
    }
 
+   void setDetails(int id, string name, int age, int rollno,int studyHrs){
+      this->id = id;
+      this->name = name;
+      this->age = age;
+      this->rollno = rollno;
+      this->studyHrs = studyHrs;
+   }
+
    private:
    void studyingHrs(){
     cout<<this->name<<"Studying hours are"<<studyHrs<<endl;
@@ -70,6 +78,10 @@ class Student{
 int main(){
 
    Student A(1,"Rakshit",21,755,7);
+   A.getDetails();
+   A.setDetails(2,"Rohit",22,756,8);
+   cout<<endl;
+   cout<<"After setting new details"<<endl;
    A.getDetails(); 
    return 0;
 
